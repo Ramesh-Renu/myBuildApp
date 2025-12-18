@@ -1,0 +1,54 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  height: 100vh;
+
+  &-content {
+    max-width: 600px;
+    width: 100%;
+
+    .error-code {
+      font-size: 120px;
+      font-weight: 500;
+      color: $color-light-red;
+    }
+    .error-message {
+      font-size: 32px;
+      color: $color-gray;
+      margin-bottom: 20px;
+    }
+
+    .error-description {
+      font-size: 18px;
+      color: $color-darkLiver;
+      margin-bottom: 30px;
+    }
+    .error-description-access {
+      font-size: 16px;
+      color: $color-oldSilver;
+      margin: auto;
+    }
+
+    &-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: $color-white;
+      background-color: $color-primary-dark;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $color-darkLiver;
+      }
+    }
+  }
+}

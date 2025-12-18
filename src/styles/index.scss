@@ -1,0 +1,58 @@
+@import "./fonts/inter.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "./variables.scss";
+@import "./pages";
+
+body {
+  margin: 0;
+  font-family: $fontInter, $fontSans;
+  color: $color-light-light-gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+  font-weight: 400;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: $color-light-light-gray;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px $color-light-light-gray;
+    border-radius: 10px;
+    background-color: $color-light-light-gray;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px $color-oldSilver;
+    background-color: $color-oldSilver;
+  }
+  * {
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+      background-color: $color-light-light-gray;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px $color-light-light-gray;
+      border-radius: 10px;
+      background-color: $color-light-light-gray;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px $color-oldSilver;
+      background-color: $color-oldSilver;
+    }
+  }
+}
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+.mandatory {
+  margin-left: 3px;
+  color: $color-light-red;
+}
